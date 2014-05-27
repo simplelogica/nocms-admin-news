@@ -15,25 +15,25 @@ module NoCms::Admin::News
     def create
       @item = NoCms::News::Item.new item_params
       if @item.save
-        @nocms_logger.info(I18n.t('.no_cms.admin.news.items.create.success', title: @item), true)
+        @nocms_logger.info(I18n.t('.no_cms.admin.news.items.create.success', title: @item.title), true)
         redirect_to edit_item_path(@item)
       else
-        @nocms_logger.error(I18n.t('.no_cms.admin.news.items.create.error', title: @item))
+        @nocms_logger.error(I18n.t('.no_cms.admin.news.items.create.error', title: @item.title))
         load_sidebar
         render :new
       end
     end
 
     def edit
-      @nocms_logger.add_message :news, I18n.t('.no_cms.admin.news.items.edit.log_messages', title: @item)
+      @nocms_logger.add_message :news, I18n.t('.no_cms.admin.news.items.edit.log_messages', title: @item.title)
     end
 
     def update
       if @item.update_attributes item_params
-        @nocms_logger.info(I18n.t('.no_cms.admin.news.items.update.success', title: @item), true)
+        @nocms_logger.info(I18n.t('.no_cms.admin.news.items.update.success', title: @item.title), true)
         redirect_to edit_item_path(@item)
       else
-        @nocms_logger.error(I18n.t('.no_cms.admin.news.items.update.error', title: @item))
+        @nocms_logger.error(I18n.t('.no_cms.admin.news.items.update.error', title: @item.title))
         load_sidebar
         render :edit
       end
@@ -41,9 +41,9 @@ module NoCms::Admin::News
 
     def destroy
       if @item.destroy
-        @nocms_logger.info(I18n.t('.no_cms.admin.news.items.destroy.success', title: @item), true)
+        @nocms_logger.info(I18n.t('.no_cms.admin.news.items.destroy.success', title: @item.title), true)
       else
-        @nocms_logger.error(I18n.t('.no_cms.admin.news.items.destroy.error', title: @item), true)
+        @nocms_logger.error(I18n.t('.no_cms.admin.news.items.destroy.error', title: @item.title), true)
       end
       redirect_to items_path
     end
