@@ -55,7 +55,7 @@ module NoCms::Admin::News
     end
 
     def load_item
-      @item = NoCms::News::Item.find(params[:id])
+      @item = NoCms::News::Item.friendly.find(params[:id])
     end
 
     def load_sidebar
@@ -63,7 +63,9 @@ module NoCms::Admin::News
     end
 
     def item_params
-      item_params = params.require(:item).permit(:title, :template, :slug, :body, :parent_id, :draft, :css_class, :css_id)
+      item_params = params.require(:item).permit(:title, :body, :slug)
+      item_params.delete :slug unless item_params[:slug].blank?
+      item_params
     end
 
   end
