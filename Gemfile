@@ -1,5 +1,8 @@
 source "https://rubygems.org"
 
+gem "nocms-admin", git: 'https://github.com/simplelogica/nocms-admin.git', branch: 'master'
+gem "nocms-news", git: 'https://github.com/simplelogica/nocms-news.git', branch: 'master'
+
 # Declare your gem's dependencies in no_cms/admin/news.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
