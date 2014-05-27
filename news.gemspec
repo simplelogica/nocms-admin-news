@@ -5,7 +5,7 @@ require "no_cms/admin/news/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "no_cms-admin-news"
+  s.name        = "nocms-admin-news"
   s.version     = NoCms::Admin::News::VERSION
   s.authors     = ["Simplelogica"]
   s.email       = ["gems@simplelogica.net"]
