@@ -1,0 +1,32 @@
+en:
+  no_cms:
+    admin:
+      menu_items:
+        items: News Items
+      news:
+        items:
+          content_fields:
+            slug_tooltip: "This field will be appended to %{base} to build the url for this news item"
+          create:
+            success: "Item %{title} has been created"
+            error: "Some error was found and Item %{title} couldn't be created"
+          destroy:
+            success: "Item %{title} has been deleted"
+            error: "Some error was found and Item %{title} couldn't be deleted"
+          edit:
+            log_messages: "Item %{title} loaded for editing"
+            submit: 'Send'
+          new:
+            submit: 'Send'
+          templates:
+            show: Default
+          item_listing_item:
+            destroy: Remove
+            show: Show Item
+            hide: Mark Item as draft
+          toolbar_right:
+            submit: Save
+            visit: Visit
+          update:
+            success: "Item %{title} has been updated"
+            error: "Some error was found and Item %{title} couldn't be updated"

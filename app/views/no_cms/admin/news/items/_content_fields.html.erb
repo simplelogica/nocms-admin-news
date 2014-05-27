@@ -1,0 +1,16 @@
+<div id="content_fields">
+  <div class="row">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="row">
+    <%= f.label_with_tooltip :slug, { tooltip: t('.slug_tooltip', base: no_cms_news.items_path)} %>
+    <%= f.text_field :slug %>
+  </div>
+
+  <div class="row">
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+  </div>
+</div>

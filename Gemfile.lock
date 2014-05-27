@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/simplelogica/nocms-admin.git
-  revision: bcaa9e7ef8e4c398c3fcfc7a7f045dfab86e69c4
+  revision: ded448f608b112c756f00f4737e25d67abd5ad68
   branch: master
   specs:
     nocms-admin (0.0.1)
@@ -10,12 +10,14 @@ GIT
 
 GIT
   remote: https://github.com/simplelogica/nocms-news.git
-  revision: cdad1362c3e4ccd97cf5bc94ffa9d320e094ca78
+  revision: 1a0ecf2c81ece74b9b1181323bb24d5551e4ef6a
   branch: master
   specs:
     nocms-news (0.0.1)
+      friendly_id (~> 5.0, >= 5.0.0)
+      friendly_id-globalize (~> 1.0.0.alpha, >= 1.0.0.alpha.1)
       globalize (~> 4.0, >= 4.0.0)
-      rails (~> 4.0, >= 4.0.3)
+      rails (~> 4.0, >= 4.0.0)
 
 PATH
   remote: .
@@ -57,6 +59,10 @@ GEM
     arel (5.0.1.20140414130214)
     builder (3.2.2)
     erubis (2.7.0)
+    friendly_id (5.0.3)
+      activerecord (>= 4.0.0)
+    friendly_id-globalize (1.0.0.alpha1)
+      friendly_id (>= 5.0.0.beta4, < 6.0)
     globalize (4.0.1)
       activemodel (>= 4.0.0, < 5)
       activerecord (>= 4.0.0, < 5)
