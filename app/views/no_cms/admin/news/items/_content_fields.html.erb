@@ -10,6 +10,11 @@
   </div>
 
   <div class="row">
+    <%= f.label_with_tooltip :published_at, { tooltip: t('.published_at_tooltip')} %>
+    <%= f.datetime_picker :published_at, format: "yyyy-mm-dd hh:mm:ss",  "date-autoclose" => true,  "minute-step" => "15" %>
+  </div>
+
+  <div class="row">
     <%= f.label :body %>
     <%= f.text_area :body %>
   </div>
