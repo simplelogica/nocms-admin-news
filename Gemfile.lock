@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/simplelogica/nocms-admin.git
-  revision: ded448f608b112c756f00f4737e25d67abd5ad68
+  revision: 584b8b11958480c78050c391af95dbf7fbd4d26d
   branch: master
   specs:
     nocms-admin (0.0.1)
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/simplelogica/nocms-news.git
-  revision: 1a0ecf2c81ece74b9b1181323bb24d5551e4ef6a
+  revision: b08a8bda966dfd88c431833b17ec82660b034b34
   branch: master
   specs:
     nocms-news (0.0.1)
@@ -22,7 +22,7 @@ GIT
 PATH
   remote: .
   specs:
-    no_cms-admin-news (0.0.1)
+    nocms-admin-news (0.0.1)
       nocms-admin (~> 0.0, >= 0.0.1)
       nocms-news (~> 0.0, >= 0.0.1)
       rails (~> 4.0, >= 4.0.4)
@@ -127,7 +127,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  no_cms-admin-news!
   nocms-admin!
+  nocms-admin-news!
   nocms-news!
   sqlite3
