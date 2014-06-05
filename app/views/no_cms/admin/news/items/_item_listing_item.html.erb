@@ -3,5 +3,10 @@
   <%= link_to item.title, edit_item_path(item)%>
   <div class="mo">
     <%= button_to '', item_path(item), method: :delete, class: "ico-mini-delete", title: t('.destroy') %>
+    <%= button_to item_path(item), method: :put, class: "ico-mini-show-hide", title: (item.draft ? t('.show') : t('.hide')) do %>
+      <% fields_for item do |f| %>
+        <%= f.hidden_field :draft, value: (item.draft ? "0" : "1") %>
+      <% end %>
+    <% end %>
   </div>
 </li>
