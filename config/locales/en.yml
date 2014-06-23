@@ -1,4 +1,15 @@
 en:
+  activerecord:
+    attributes:
+      no_cms/news/category:
+        title: Title
+      no_cms/news/item:
+        body: Content
+        categories: Categories
+        category_ids: Categories
+        published_at: Publish date
+        slug: Slug
+        title: Title
   no_cms:
     admin:
       menu_items:

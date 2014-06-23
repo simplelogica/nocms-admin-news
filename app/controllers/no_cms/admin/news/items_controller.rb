@@ -63,7 +63,7 @@ module NoCms::Admin::News
     end
 
     def item_params
-      item_params = params.require(:item).permit(:title, :body, :slug, :published_at, :draft)
+      item_params = params.require(:item).permit(:title, :body, :slug, :published_at, :draft, category_ids: [])
       item_params.delete :slug unless item_params[:slug].blank?
       item_params
     end
