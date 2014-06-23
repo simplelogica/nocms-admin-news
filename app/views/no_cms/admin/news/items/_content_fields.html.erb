@@ -18,4 +18,9 @@
     <%= f.label :body %>
     <%= f.text_area :body %>
   </div>
+
+  <div class="row">
+    <%= f.label :category_ids %>
+    <%= f.collection_select :category_ids, NoCms::News::Category.includes(:translations), :id, :title, {}, multiple: true %>
+  </div>
 </div>

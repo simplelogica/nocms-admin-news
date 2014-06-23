@@ -1,9 +1,46 @@
 en:
+  activerecord:
+    attributes:
+      no_cms/news/category:
+        title: Title
+      no_cms/news/item:
+        body: Content
+        categories: Categories
+        category_ids: Categories
+        published_at: Publish date
+        slug: Slug
+        title: Title
   no_cms:
     admin:
       menu_items:
-        items: News Items
+        categories: Categories
+        items: Items
+        news: News
       news:
+        categories:
+          category_listing_item:
+            destroy: Remove
+            show: Show Category
+            hide: Mark Category as draft
+          create:
+            success: "Category %{title} has been created"
+            error: "Some error was found and Category %{title} couldn't be created"
+          destroy:
+            success: "Category %{title} has been deleted"
+            error: "Some error was found and Category %{title} couldn't be deleted"
+          edit:
+            log_messages: "Category %{title} loaded for editing"
+            submit: 'Send'
+          new:
+            submit: 'Send'
+          templates:
+            show: Default
+          toolbar_right:
+            submit: Save
+            visit: Visit
+          update:
+            success: "Category %{title} has been updated"
+            error: "Some error was found and Category %{title} couldn't be updated"
         items:
           content_fields:
             published_at_tooltip: Date and hour this news item has been published. If not filled in it automatically gets value when the news item is published

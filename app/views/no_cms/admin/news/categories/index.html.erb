@@ -1,0 +1,8 @@
+<% content_for :second_menu do %>
+  <%= render partial: 'category_listing_item', collection: @categories, as: 'category', layout: 'category_listing' unless @categories.blank? %>
+<% end %>
+
+
+<div class="content">
+  <%= render 'no_cms/admin/shared/log_messages' %>
+</div>
