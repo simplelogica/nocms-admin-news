@@ -44,7 +44,7 @@ es:
         items:
           content_fields:
             published_at_tooltip: "Fecha y hora de publicación de este artículo. Si no se indica, se tomará automaticamente cuando se publique"
-            slug_tooltip: "Este campo se añadirá a %{base} para contruir la url de este artículo"
+            slug_tooltip: "Este campo se añadirá a %{base} para construir la url de este artículo"
           create:
             success: "El artículo %{title} ha sido creado"
             error: "Se han encontrado algunos errores y el artículo %{title} no ha podido ser creado"
