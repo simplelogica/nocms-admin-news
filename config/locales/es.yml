@@ -1,0 +1,70 @@
+es:
+  activerecord:
+    attributes:
+      no_cms/news/category:
+        title: Título
+      no_cms/news/item:
+        body: Contenido
+        categories: Categorias
+        category_ids: Categorias
+        published_at: Fecha de publicación
+        slug: Slug
+        title: Título
+  no_cms:
+    admin:
+      menu_items:
+        categories: Categorias
+        items: Elementos
+        news: Artículos
+      news:
+        categories:
+          category_listing_item:
+            destroy: Borrar
+            show: Mostrar Categoría
+            hide: Marcar categoría como borrador
+          create:
+            success: "La categoría %{title} ha sido creada"
+            error: "Se han encontrado algunos errores y la categoría %{title} no ha podido ser creada"
+          destroy:
+            success: "La categoría %{title} ha sido borrada"
+            error: "Se han encontrado algunos errores y la categoría %{title} no ha podido ser borrada"
+          edit:
+            log_messages: "Categoría %{title} cargada para editar"
+            submit: 'Enviar'
+          new:
+            submit: 'Enviar'
+          templates:
+            show: Default
+          toolbar_right:
+            submit: Guardar
+            visit: Visitar
+          update:
+            success: "La categoría %{title} ha sido actualizada"
+            error: "Se han encontrado algunos errores y la categoría %{title} no ha podido ser actualizada"
+        items:
+          content_fields:
+            published_at_tooltip: "Fecha y hora de publicación de este artículo. Si no se indica, se tomará automaticamente cuando se publique"
+            slug_tooltip: "Este campo se añadirá a %{base} para contruir la url de este artículo"
+          create:
+            success: "El artículo %{title} ha sido creado"
+            error: "Se han encontrado algunos errores y el artículo %{title} no ha podido ser creado"
+          destroy:
+            success: "El artículo %{title} ha sido borrado"
+            error: "Se han encontrado algunos errores y el artículo %{title} no ha podido ser borrado"
+          edit:
+            log_messages: "Artículo %{title} cargado para editar"
+            submit: 'Enviar'
+          new:
+            submit: 'Enviar'
+          templates:
+            show: Default
+          item_listing_item:
+            destroy: Borrar
+            show: Mostrar Artículo
+            hide: Marcar artículo como borrador
+          toolbar_right:
+            submit: Guardar
+            visit: Visitar
+          update:
+            success: "El artículo %{title} ha sido actualizado"
+            error: "Se han encontrado algunos errores y el artículo %{title} no ha podido ser actualizado"
